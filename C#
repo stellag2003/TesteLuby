@@ -21,4 +21,194 @@ Console.WriteLine($"O resultado de {numero}! é: " + CalculaFatorial(numero) );
 
 1.3) Número primo
 
+int ContarNumerosPrimos(int numero)
+{
+    int contador = 0;
+
+    for (int i = 2; i <= numero; i++)
+    {
+        bool ePrimo = true;
+
+        for (int j = 2; j < i; j++)
+        {
+
+            if (i % j == 0) 
+            {
+                ePrimo = false;
+                break;
+            }
+           
+        }
+        if (ePrimo)
+        {
+            Console.WriteLine("Número primo: " + i);
+            contador++;
+        }
+
+    }
+
+    Console.WriteLine("Total de números primos: " + contador);
+   
+}
+
+Console.WriteLine("Digite um número:");
+int numero = int.Parse(Console.ReadLine());
+ContarNumerosPrimos(numero);
+
+1.4) Vogais
+
+int CalcularVogais(string texto)
+{
+    int contador = 0;
+    char[] vogais = { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
+
+    foreach (char letra in texto)
+    {
+        if (vogais.Contains(letra))
+        {
+            contador++;
+        }
+    }
+
+    return contador;
+}
+
+
+Console.WriteLine("Digite um texto");
+string resposta = Console.ReadLine();
+if (resposta.Any(char.IsDigit))
+{
+    Console.WriteLine("Erro: Não digite números, apenas letras!");
+}
+else
+{
+    Console.WriteLine("Existem  " + CalcularVogais(resposta) + " vogais nesse texto");
+}
+
+1.5) Porcentagem
+
+static string CalcularValorComDesconto(string valorComFormato, string porcentagem)
+{
+    string valorSemFormato = valorComFormato.Replace("R$", "").Replace(",", ".");
+
+    double valorOriginal = Convert.ToDouble(valorSemFormato, CultureInfo.InvariantCulture);
+
+    double porcentagemDesconto = Convert.ToDouble(porcentagem.Replace("%", "")) / 100;
+
+    double valorComDesconto = valorOriginal * (1 - porcentagemDesconto);
+
+    string valorFormatado = valorComDesconto.ToString("C2", new CultureInfo("pt-BR"));
+
+    return valorFormatado;
+
+}
+
+Console.WriteLine("Digite um valor");
+string resposta = Console.ReadLine();
+Console.WriteLine("e agora a porcentagem de desconto");
+string porcentagem = Console.ReadLine();
+Console.WriteLine("O resultado é " + CalcularValorComDesconto(resposta, porcentagem)); 
+
+1.6) Datas
+
+ static int CalcularDiferencaData(string data1, string data2)
+{
+    return (DateTime.ParseExact(data2, "ddMMyyyy", null) - DateTime.ParseExact(data1, "ddMMyyyy", null)).Days;
+}
+
+Console.WriteLine("Digite uma data");
+string data = Console.ReadLine();
+Console.WriteLine("Digite outra data");
+string data2 = Console.ReadLine();
+Console.WriteLine("A diferença entre essas datas é de " + CalcularDiferencaData(data, data2) + " dias");
+
+1.7) Vetores, números pares
+
+static int[] ObterElementosPares(int[] vetor)
+{
+    return vetor.Where(x => x % 2 == 0).ToArray();
+}
+
+int[] vetor = new int[] { 1, 2, 3, 4, 5 };
+int[] resultado = ObterElementosPares(vetor);
+
+Console.WriteLine("Elementos pares: " + string.Join(", ", resultado));
+
+1.8) Buscar nomes
+
+string[] BuscarPessoa(string[] vetor, string busca)
+{
+    return vetor.Where(nome => nome.Contains(busca)).ToArray();
+}
+
+string[] vetor = new string[]
+{
+            "John Doe",
+            "Jane Doe",
+            "Alice Jones",
+            "Bobby Louis",
+            "Lisa Romero"
+};
+
+string[] resultado1 = BuscarPessoa(vetor, "Doe");
+Console.WriteLine(string.Join(", ", resultado1)); 
+
+string[] resultado2 = BuscarPessoa(vetor, "Alice");
+Console.WriteLine(string.Join(", ", resultado2)); 
+
+string[] resultado3 = BuscarPessoa(vetor, "James");
+Console.WriteLine(string.Join(", ", resultado3));
+
+string[] resultado4 = BuscarPessoa(vetor, "Louis");
+Console.WriteLine(string.Join(", ", resultado4));
+
+1.9) Matriz
+
+int[][] TransformarEmMatriz(string numeros)
+{
+    int[] array = numeros.Split(',').Select(int.Parse).ToArray(); 
+
+    return array
+        .Select((num, index) => new { num, index }) 
+        .GroupBy(x => x.index / 2) 
+        .Select(g => g.Select(x => x.num).ToArray()) 
+        .ToArray(); 
+}
+
+string input = "1,2,3,4,5,6";
+int[][] matriz = TransformarEmMatriz(input);
+
+foreach (var linha in matriz)
+{
+    Console.WriteLine($"[{string.Join(", ", linha)}]");
+}
+
+1.10) Compara vetores
+
+int[] ObterElementosFaltantes(int[] vetor1, int[] vetor2)
+{
+    return vetor1.Except(vetor2).Concat(vetor2.Except(vetor1)).ToArray();
+}
+
+int[] vetor1 = { 1, 2, 3, 4, 5 };
+int[] vetor2 = { 1, 2, 5 };
+Console.WriteLine(string.Join(", ", ObterElementosFaltantes(vetor1, vetor2)));
+
+int[] vetor3 = { 1, 4, 5 };
+int[] vetor4 = { 1, 2, 3, 4, 5 };
+Console.WriteLine(string.Join(", ", ObterElementosFaltantes(vetor3, vetor4)));
+
+int[] vetor5 = { 1, 2, 3, 4 };
+int[] vetor6 = { 2, 3, 4, 5 };
+Console.WriteLine(string.Join(", ", ObterElementosFaltantes(vetor5, vetor6))); 
+
+int[] vetor7 = { 1, 3, 4, 5 };
+int[] vetor8 = { 1, 3, 4, 5 };
+Console.WriteLine(string.Join(", ", ObterElementosFaltantes(vetor7, vetor8)));
+
+
+
+
+
+
 
