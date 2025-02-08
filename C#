@@ -1,0 +1,24 @@
+1.1) Fatorial
+
+int CalculaFatorial(int numero)
+{
+
+    int resultado = 1;
+    for (int i = numero; i > 1; i--)
+    {
+        resultado = (resultado * i);
+    }
+    return resultado;
+
+}
+
+Console.WriteLine("Seja bem-vindo ao programa de calcular fatorial!");
+Console.WriteLine("Digite um número");
+int numero = int.Parse(Console.ReadLine());
+Console.WriteLine($"O resultado de {numero}! é: " + CalculaFatorial(numero) ); 
+
+1.2)
+
+1.3) Número primo
+
+
