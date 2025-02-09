@@ -1,29 +1,44 @@
-# Máquina de Venda de Bebidas
+# Vending Machine - Máquina de Venda de Bebidas
 
-## Descrição
-Este programa simula uma Vending Machine (Máquina de Venda) utilizando C# e orientação a objetos. A máquina possui um estoque de produtos, controla a quantidade disponível, realiza vendas e contabiliza o total arrecadado.
+Este README refere-se especificamente ao projeto da **Vending Machine**, desenvolvido como parte do teste técnico. Se houver outros arquivos no repositório, eles podem estar relacionados a outras partes do teste.
 
-## Funcionalidades
-- Exibe o menu de produtos disponíveis com preços e quantidade em estoque.
-- Permite a compra de produtos somente se houver estoque disponível.
-- Solicita o valor do produto e verifica se há saldo suficiente.
-- Exibe o troco quando necessário.
-- Conta o total de vendas realizadas.
-- Possui uma opção para visualizar o estoque.
+## 📌 Sobre o Projeto
+A Vending Machine é um sistema simples de venda de bebidas em lata via console, implementado em C# utilizando conceitos de Programação Orientada a Objetos (POO).
 
-## Como Executar
-1. Clone ou baixe este repositório.
-2. Compile e execute o código em um ambiente compatível com C#.
-3. Siga as instruções no console para realizar compras e visualizar o estoque.
+## ⚙️ Funcionalidades
+- Exibição de um menu de bebidas disponíveis.
+- Controle de estoque para cada bebida.
+- Validação do saldo do usuário antes da compra.
+- Cálculo do troco, se necessário.
+- Registro do valor total das vendas.
+- Exibição do estoque atualizado após cada venda.
 
-## Estrutura do Código
-- **Classe Produto**: Representa um item vendável com nome, preço e quantidade.
-- **Classe VendingMachine**: Gerencia o estoque, vendas e exibição de informações.
-- **Programa Principal**: Interface do usuário para interagir com a máquina.
+## 🛠️ Tecnologias Utilizadas
+- **C#**
+- **.NET Console Application**
 
-## Melhorias Futuras
-- Implementar uma interface gráfica.
-- Adicionar mais opções de pagamento.
-- Permitir múltiplas compras em uma única transação.
+## 🚀 Como Executar
+1. Certifique-se de ter o **.NET SDK** instalado.
+2. Clone o repositório ou copie os arquivos do projeto.
+3. No terminal ou prompt de comando, navegue até a pasta do projeto.
+4. Compile e execute com o seguinte comando:
+   ```sh
+   dotnet run
+   ```
+5. Siga as instruções no console para interagir com a Vending Machine.
 
+## 📂 Estrutura do Projeto
+```
+📂 VendingMachine
+ ├── 📄 Program.cs  # Código principal
+ ├── 📄 Produto.cs  # Classe representando um produto
+ ├── 📄 Maquina.cs  # Classe que gerencia a Vending Machine
+ ├── 📄 README.md   # Documentação do projeto
+```
+
+## 📢 Observação
+Caso este README esteja junto a outros arquivos do teste técnico, saiba que ele se aplica **somente à Vending Machine**. Para outras partes do teste, consulte a documentação correspondente.
+
+---
+💡 **Dúvidas ou sugestões?** Fique à vontade para entrar em contato! 😊
 
