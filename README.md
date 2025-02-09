@@ -22,5 +22,14 @@ A Vending Machine é um sistema simples de venda de bebidas em lata via console,
 
 ![image](https://github.com/user-attachments/assets/37a0ef95-aecd-4cb6-bbb7-1aede00e8396)
 
+![image](https://github.com/user-attachments/assets/f19520db-4b07-4634-8f12-b6c56ccdfd93)
+
+![image](https://github.com/user-attachments/assets/f1a6b2e9-14ac-4f88-b8ba-e11105b0301d)
+
+![image](https://github.com/user-attachments/assets/a763a126-41e0-499c-8000-584881d3d4b7)
+
+
+
+
 
 
