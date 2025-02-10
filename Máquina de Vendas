@@ -125,6 +125,6 @@ class Program
             }
         }
 
-        Console.WriteLine("\nObrigado por usar a Vending Machine!");
+        Console.WriteLine("\nObrigada por usar a Vending Machine!");
     }
 }
