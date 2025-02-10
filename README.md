@@ -18,7 +18,7 @@ A Vending Machine é um sistema simples de venda de bebidas em lata via console,
 - **.NET Console Application**
 
 
-## 📌 imagens do programa em execução
+## 🖼️ imagens do programa em execução
 
 ![image](https://github.com/user-attachments/assets/37a0ef95-aecd-4cb6-bbb7-1aede00e8396)
 
