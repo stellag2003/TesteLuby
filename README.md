@@ -12,6 +12,7 @@ A Vending Machine é um sistema simples de venda de bebidas em lata via console,
 - Cálculo do troco, se necessário.
 - Registro do valor total das vendas.
 - Exibição do estoque atualizado após cada venda.
+- 
 
 ## 🛠️ Tecnologias Utilizadas
 - **C#**
