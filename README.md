@@ -1,6 +1,6 @@
 # Máquina de Vendas de Bebidas
 
-Este README refere-se especificamente ao projeto da **Máquina de Vendas**, desenvolvido como parte do teste técnico. Se houver outros arquivos no repositório, eles podem estar relacionados a outras partes do teste.
+Este README refere-se especificamente ao projeto da **Máquina de Vendas**, desenvolvido como parte do teste técnico. 
 
 ## 📌 Sobre o Projeto
 A Vending Machine é um sistema simples de venda de bebidas em lata via console, implementado em C# utilizando conceitos de Programação Orientada a Objetos (POO).
@@ -18,7 +18,7 @@ A Vending Machine é um sistema simples de venda de bebidas em lata via console,
 - **.NET Console Application**
 
 
-## 📌 imagens
+## 📌 imagens do programa em execução
 
 ![image](https://github.com/user-attachments/assets/37a0ef95-aecd-4cb6-bbb7-1aede00e8396)
 
